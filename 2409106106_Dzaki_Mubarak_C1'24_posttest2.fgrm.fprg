@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 12.13.08 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtM1M1UDhJMDg7MjAyNC0wOS0xNzsxMC41NS4wNiBQTTsyNTg3"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtM1M1UDhJMDg7MjAyNC0wOS0xODsxMi4xMy4wOCBBTTsyOzI2ODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama" type="String" array="False" size=""/>
+            <declare name="nim, harga" type="Integer" array="False" size=""/>
+            <declare name="gulaku, maniskita, gunungmadu" type="String" array="False" size=""/>
+            <declare name="DiskonGulakuNominal" type="String" array="False" size=""/>
+            <declare name="Diskonmaniskitanominal" type="String" array="False" size=""/>
+            <declare name="diskongunungmadunominal" type="String" array="False" size=""/>
+            <declare name="diskongunungmadu" type="String" array="False" size=""/>
+            <input variable="nama"/>
+            <output expression="&quot;Masukkan Nama Anda: &quot;" newline="True"/>
+            <input variable="nim"/>
+            <output expression="&quot;masukkan nim anda&quot;" newline="True"/>
+            <input variable="harga"/>
+            <output expression="&quot;masukkan harga anda&quot;" newline="True"/>
+            <assign variable="DiskonGulakuNominal" expression="harga - (harga*0.07)"/>
+            <assign variable="Diskonmaniskitanominal" expression="harga-(harga*0.11)"/>
+            <assign variable="diskongunungmadunominal" expression="harga-(harga*0.13)"/>
+            <output expression="nama" newline="True"/>
+            <output expression="nim" newline="True"/>
+            <output expression="DiskonGulakuNominal" newline="True"/>
+            <output expression="diskonmaniskitanominal" newline="True"/>
+            <output expression="diskongunungmadu" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
