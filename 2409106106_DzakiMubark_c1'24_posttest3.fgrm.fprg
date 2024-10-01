@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106106_DzakiMubark_c1'24_posttest3"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-01 07.48.47 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtMko0OEk5Rkc7MjAyNC0xMC0wMTswNi4wMi41MyBQTTsyNTc0"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtMko0OEk5Rkc7MjAyNC0xMC0wMTswNy40OC40NyBQTTsxOzI2OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama" type="String" array="False" size=""/>
+            <declare name="hari, dipilih" type="String" array="False" size=""/>
+            <declare name="uang" type="Integer" array="False" size=""/>
+            <declare name="tiket" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan nama anda: &quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;masukkan hari dipilh: &quot;" newline="True"/>
+            <input variable="hari"/>
+            <output expression="&quot;uang yang dipakai atau dimiliki: &quot;" newline="True"/>
+            <input variable="uang"/>
+            <if expression="hari == &quot;senin&quot; or hari == &quot;selasa&quot; or hari == &quot;rabu&quot; or hari == &quot;kamis&quot;">
+                <then>
+                    <assign variable="tiket" expression="uang - 40000"/>
+                    <if expression="uang &gt;= 0">
+                        <then>
+                            <output expression="&quot;selamat anda berhasil membeli tiket di hari &quot;" newline="True"/>
+                            <output expression="hari" newline="True"/>
+                            <output expression="&quot;semoga anda senang dengan pelayanan kami&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;sayang uang anda tidak cukup&quot;" newline="True"/>
+                            <output expression="&quot;semoga dapat uang yang cukup atau lebih nanti&quot;" newline="True"/>
+                            <output expression="&quot;semoga anda senang dengan pelayanan kami&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="hari == &quot;jumat&quot;">
+                        <then>
+                            <assign variable="tiket" expression="uang - 45000"/>
+                            <if expression="uang &gt;= 0">
+                                <then>
+                                    <output expression="&quot;selamat anda berhasil membeli tiket di hari &quot;" newline="True"/>
+                                    <output expression="hari" newline="True"/>
+                                    <output expression="&quot;semoga anda senang dengan pelayanan kami&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;sayang uang anda tidak cukup&quot;" newline="True"/>
+                                    <output expression="&quot;semoga dapat uang yang cukup atau lebih nanti&quot;" newline="True"/>
+                                    <output expression="&quot;semoga anda senang dengan pelayanan kami&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="hari == &quot;sabtu&quot;">
+                                <then>
+                                    <assign variable="tiket" expression="uang - 55000"/>
+                                    <if expression="uang &gt;= 0">
+                                        <then>
+                                            <output expression="&quot;selamat anda berhasil membeli tiket di hari &quot;" newline="True"/>
+                                            <output expression="hari" newline="True"/>
+                                            <output expression="&quot;semoga anda senang dengan pelayanan kami&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;sayang uang anda tidak cukup&quot;" newline="True"/>
+                                            <output expression="&quot;semoga dapat uang yang cukup atau lebih nanti&quot;" newline="True"/>
+                                            <output expression="&quot;semoga anda senang dengan pelayanan kami&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="hari == &quot;minggu&quot;">
+                                        <then>
+                                            <assign variable="tiket" expression="uang - 60000"/>
+                                            <if expression="uang &gt;= 0">
+                                                <then>
+                                                    <output expression="&quot;selamat anda berhasil membeli tiket di hari &quot;" newline="True"/>
+                                                    <output expression="hari" newline="True"/>
+                                                    <output expression="&quot;semoga anda senang dengan pelayanan kami&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;sayang uang anda tidak cukup&quot;" newline="True"/>
+                                                    <output expression="&quot;semoga dapat uang yang cukup atau lebih nanti&quot;" newline="True"/>
+                                                    <output expression="&quot;semoga anda senang dengan pelayanan kami&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;hari yang anda ketik salah&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
